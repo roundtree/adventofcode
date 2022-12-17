@@ -44,16 +44,16 @@ class TunnelDeviceMapTest {
 
     @Test
     void testGetAmountOfFieldsWithoutDistressBeaconPossibilityForRow() {
-        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(9)).isEqualTo(25);
-        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(10)).isEqualTo(26);
-        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(11)).isEqualTo(27);
+        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutBeaconPossibilityForRow(9)).isEqualTo(25);
+        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutBeaconPossibilityForRow(10)).isEqualTo(26);
+        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutBeaconPossibilityForRow(11)).isEqualTo(27);
     }
 
     @Test
     void day15PuzzleSolutionToPart1() {
         final TunnelDeviceMap tunnelDeviceMap = TunnelDeviceMapFactory.setupTunnelDeviceMap();
 
-        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(2_000_000)).isEqualTo(5256611);
+        assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutBeaconPossibilityForRow(2_000_000)).isEqualTo(5256611);
     }
 
     @Test

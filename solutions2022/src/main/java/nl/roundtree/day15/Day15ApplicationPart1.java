@@ -16,7 +16,7 @@ public class Day15ApplicationPart1 {
         final TunnelDeviceMap tunnelDeviceMap = TunnelDeviceMapFactory.setupTunnelDeviceMap();
 
         log.info("Determining positions without beacon...");
-        final int numberOfPositionsWithoutBeacon = tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(2_000_000);
+        final int numberOfPositionsWithoutBeacon = tunnelDeviceMap.getAmountOfFieldsWithoutBeaconPossibilityForRow(2_000_000);
         log.info("Amount of positions without beacon: {}", numberOfPositionsWithoutBeacon);
     }
 }

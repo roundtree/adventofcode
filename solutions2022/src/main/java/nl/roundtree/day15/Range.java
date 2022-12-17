@@ -1,13 +1,23 @@
 package nl.roundtree.day15;
 
-public class Range {
+import java.util.Comparator;
+
+public class Range implements Comparable<Range> {
 
     private final int start;
-    private final int endInclusive;
+    private int endInclusive;
 
     public Range(int start, int endInclusive) {
         this.start = start;
         this.endInclusive = endInclusive;
+    }
+
+    public void modifyEnd(int endInclusive) {
+        this.endInclusive = endInclusive;
+    }
+
+    public int getLength() {
+        return (endInclusive - start) + 1;
     }
 
     public int getStart() {
@@ -16,5 +26,12 @@ public class Range {
 
     public int getEndInclusive() {
         return endInclusive;
+    }
+
+    @Override
+    public int compareTo(final Range other) {
+        return Comparator.comparing(Range::getStart)
+                .thenComparing(Range::getEndInclusive)
+                .compare(this, other);
     }
 }

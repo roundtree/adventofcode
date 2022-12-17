@@ -13,9 +13,9 @@ public class Field {
     }
 
     int getManhattanDistanceTo(final Field toField) {
-        int euclidianDistanceX = Math.abs(this.column - toField.column);
-        int euclidianDistanceY = Math.abs(this.row - toField.row);
-        return euclidianDistanceX + euclidianDistanceY;
+        int euclideanDistanceX = Math.abs(this.column - toField.column);
+        int euclideanDistanceY = Math.abs(this.row - toField.row);
+        return euclideanDistanceX + euclideanDistanceY;
     }
 
     @Override

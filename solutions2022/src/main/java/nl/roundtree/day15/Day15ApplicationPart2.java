@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 
 public class Day15ApplicationPart2 {
 
-
     private static final Logger log = LoggerFactory.getLogger(Day15ApplicationPart1.class);
 
     public static void main(String[] args) {
