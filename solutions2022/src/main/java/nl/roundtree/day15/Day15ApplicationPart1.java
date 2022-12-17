@@ -6,12 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Day15Application {
+public class Day15ApplicationPart1 {
 
-    private static final Logger log = LoggerFactory.getLogger(Day15Application.class);
+    private static final Logger log = LoggerFactory.getLogger(Day15ApplicationPart1.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(Day15Application.class, args);
+        SpringApplication.run(Day15ApplicationPart1.class, args);
 
         final TunnelDeviceMap tunnelDeviceMap = TunnelDeviceMapFactory.setupTunnelDeviceMap();
 

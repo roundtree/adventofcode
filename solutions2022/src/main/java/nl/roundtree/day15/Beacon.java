@@ -11,8 +11,8 @@ public class Beacon extends Device {
     }
 
     @Override
-    Beacon getClosestBeacon() {
-        return this;
+    int getManhattanDistanceToBeacon() {
+        return 0;
     }
 
     @Override

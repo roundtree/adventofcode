@@ -1,5 +1,6 @@
 package nl.roundtree.day15;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -9,8 +10,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class TunnelDeviceMapTest {
 
-    @Test
-    void testGetAmountOfFieldsWithoutDistressBeaconPossibilityForRow() {
+    private TunnelDeviceMap tunnelDeviceMap;
+
+    @BeforeEach
+    void setUp() {
         final Beacon beaconRowMinus2 = new Beacon(-2, 15);
         final Beacon beaconRow10 = new Beacon(10, 16);
         final Beacon beaconRow15 = new Beacon(15, 3);
@@ -36,8 +39,11 @@ class TunnelDeviceMapTest {
                 new Sensor(14, 3, beaconRow15),
                 new Sensor(20, 1, beaconRow15));
 
-        final TunnelDeviceMap tunnelDeviceMap = new TunnelDeviceMap(beacons, sensors);
+        tunnelDeviceMap = new TunnelDeviceMap(beacons, sensors);
+    }
 
+    @Test
+    void testGetAmountOfFieldsWithoutDistressBeaconPossibilityForRow() {
         assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(9)).isEqualTo(25);
         assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(10)).isEqualTo(26);
         assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(11)).isEqualTo(27);
@@ -49,4 +55,17 @@ class TunnelDeviceMapTest {
 
         assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutDistressBeaconPossibilityForRow(2_000_000)).isEqualTo(5256611);
     }
+
+    @Test
+    void testGetDistressBeaconFieldLocationWithinCoordinateRange() {
+        assertThat(tunnelDeviceMap.getDistressBeaconFrequencyWithinCoordinateRange(0, 20)).isEqualTo(56000011);
+    }
+
+    @Test
+    void day15PuzzleSolutionToPart2() {
+        final TunnelDeviceMap tunnelDeviceMap = TunnelDeviceMapFactory.setupTunnelDeviceMap();
+
+        assertThat(tunnelDeviceMap.getDistressBeaconFrequencyWithinCoordinateRange(0, 4_000_000)).isEqualTo(13337919186981L);
+    }
+
 }

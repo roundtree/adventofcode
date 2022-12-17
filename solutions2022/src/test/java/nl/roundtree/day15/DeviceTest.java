@@ -8,8 +8,8 @@ class DeviceTest {
 
     @Test
     void testGetFieldsWithoutBeaconForRow() {
-        final Beacon beacon = new Beacon(new Field(27, 17));
-        final Sensor sensor = new Sensor(new Field(20, 10), beacon);
+        final Beacon beacon = new Beacon(27, 17);
+        final Sensor sensor = new Sensor(20, 10, beacon);
 
         assertThat(sensor.getFieldsWithoutBeaconForRow(20))
                 .hasSize(9)
