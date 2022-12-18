@@ -14,7 +14,7 @@ class ElvesTest {
     }
 
     @Test
-    void day01PuzzleSolutionToPart1() {
+    void testDay01PuzzleSolutionToPart1() {
         final Elves elves = new Elves(PuzzleInputReader.readPuzzleInput("day01/day01_puzzleinput.txt"));
 
         assertThat(elves.findElfCarryingMostCalories().getTotalNumberOfCalories()).isEqualTo(70698);
@@ -28,7 +28,7 @@ class ElvesTest {
     }
 
     @Test
-    void day01PuzzleSolutionToPart2() {
+    void testDay01PuzzleSolutionToPart2() {
         final Elves elves = new Elves(PuzzleInputReader.readPuzzleInput("day01/day01_puzzleinput.txt"));
 
         assertThat(elves.findCalorieSumOfTopThreeElvesCarryingMostCalories()).isEqualTo(206643);

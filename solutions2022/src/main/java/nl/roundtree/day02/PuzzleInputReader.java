@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
 
-public class PuzzleInputReader {
+class PuzzleInputReader {
 
     static Rounds readPuzzleInputPart1(final String path) {
         BiConsumer<List<Round>, String[]> biConsumer = (rounds, encodedActionsInput) -> {

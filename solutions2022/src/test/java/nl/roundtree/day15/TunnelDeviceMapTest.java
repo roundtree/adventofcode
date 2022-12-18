@@ -50,7 +50,7 @@ class TunnelDeviceMapTest {
     }
 
     @Test
-    void day15PuzzleSolutionToPart1() {
+    void testDay15PuzzleSolutionToPart1() {
         final TunnelDeviceMap tunnelDeviceMap = TunnelDeviceMapFactory.setupTunnelDeviceMap();
 
         assertThat(tunnelDeviceMap.getAmountOfFieldsWithoutBeaconPossibilityForRow(2_000_000)).isEqualTo(5256611);
@@ -62,7 +62,7 @@ class TunnelDeviceMapTest {
     }
 
     @Test
-    void day15PuzzleSolutionToPart2() {
+    void testDay15PuzzleSolutionToPart2() {
         final TunnelDeviceMap tunnelDeviceMap = TunnelDeviceMapFactory.setupTunnelDeviceMap();
 
         assertThat(tunnelDeviceMap.getDistressBeaconFrequencyWithinCoordinateRange(0, 4_000_000)).isEqualTo(13337919186981L);

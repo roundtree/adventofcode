@@ -14,7 +14,7 @@ class RoundsTest {
     }
 
     @Test
-    void day01PuzzleSolutionToPart1() {
+    void testDay01PuzzleSolutionToPart1() {
         final Rounds rounds = PuzzleInputReader.readPuzzleInputPart1("day02/day02_puzzleinput.txt");
 
         assertThat(rounds.getTotalPlayerScore()).isEqualTo(12740);
@@ -28,7 +28,7 @@ class RoundsTest {
     }
 
     @Test
-    void day01PuzzleSolutionToPart2() {
+    void testDay01PuzzleSolutionToPart2() {
         final Rounds rounds = PuzzleInputReader.readPuzzleInputPart2("day02/day02_puzzleinput.txt");
 
         assertThat(rounds.getTotalPlayerScore()).isEqualTo(11980);

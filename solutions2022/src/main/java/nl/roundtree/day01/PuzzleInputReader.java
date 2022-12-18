@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PuzzleInputReader {
+class PuzzleInputReader {
 
     static List<Elf> readPuzzleInput(final String path) {
         final List<Elf> elves = new ArrayList<>();
