@@ -1,6 +1,6 @@
 package nl.roundtree.day15;
 
-public class Beacon extends Device {
+class Beacon extends Device {
 
     Beacon(final Field field) {
         super(field);

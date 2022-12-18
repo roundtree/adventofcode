@@ -1,6 +1,6 @@
 package nl.roundtree.day02;
 
-public enum Action {
+enum Action {
 
     ROCK(1),
     PAPER(2),

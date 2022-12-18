@@ -5,15 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Rucksack {
-
-    final Compartment compartment1;
-    final Compartment compartment2;
-
-    public Rucksack(final Compartment compartment1, final Compartment compartment2) {
-        this.compartment1 = compartment1;
-        this.compartment2 = compartment2;
-    }
+record Rucksack(Compartment compartment1, Compartment compartment2) {
 
     int getSumOfPrioritiesForItemsInBothCompartments() {
         final List<Character> itemsInCompartment1 = compartment1.items;

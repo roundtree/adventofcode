@@ -2,7 +2,7 @@ package nl.roundtree.day15;
 
 import java.util.Optional;
 
-public abstract class Device {
+abstract class Device {
 
     final Field field;
 

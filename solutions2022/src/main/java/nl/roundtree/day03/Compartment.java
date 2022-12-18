@@ -3,7 +3,7 @@ package nl.roundtree.day03;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Compartment {
+class Compartment {
 
     static final String itemsSortedByPriority = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

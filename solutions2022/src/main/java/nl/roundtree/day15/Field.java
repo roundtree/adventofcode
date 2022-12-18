@@ -1,8 +1,7 @@
 package nl.roundtree.day15;
 
 import java.util.Objects;
-
-public class Field {
+class Field {
 
     final Integer column;
     final Integer row;

@@ -3,7 +3,7 @@ package nl.roundtree.day01;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Elf {
+class Elf {
 
     final List<Integer> caloriesPerFoodItem = new ArrayList<>();
 

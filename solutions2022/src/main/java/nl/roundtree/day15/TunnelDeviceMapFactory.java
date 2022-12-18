@@ -3,7 +3,7 @@ package nl.roundtree.day15;
 import java.util.Arrays;
 import java.util.List;
 
-public class TunnelDeviceMapFactory {
+class TunnelDeviceMapFactory {
 
     static TunnelDeviceMap setupTunnelDeviceMap() {
         final Beacon beaconRow2674241 = new Beacon(2674241, 4192888);

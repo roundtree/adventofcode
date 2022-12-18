@@ -1,6 +1,6 @@
 package nl.roundtree.day15;
 
-public class Sensor extends Device {
+class Sensor extends Device {
 
     final int manhattanDistanceToBeacon;
 

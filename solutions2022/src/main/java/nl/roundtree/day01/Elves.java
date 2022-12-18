@@ -4,13 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Elves {
-
-    final List<Elf> elves;
-
-    Elves(final List<Elf> elves) {
-        this.elves = elves;
-    }
+record Elves(List<Elf> elves) {
 
     Elf findElfCarryingMostCalories() {
         return elves

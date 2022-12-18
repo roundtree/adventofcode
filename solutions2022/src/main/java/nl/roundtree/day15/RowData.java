@@ -3,7 +3,7 @@ package nl.roundtree.day15;
 import java.util.List;
 import java.util.TreeSet;
 
-public class RowData {
+class RowData {
 
     final int row;
     final int min;

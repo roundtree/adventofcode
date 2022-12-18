@@ -2,7 +2,7 @@ package nl.roundtree.day15;
 
 import java.util.Comparator;
 
-public class Range implements Comparable<Range> {
+class Range implements Comparable<Range> {
 
     private final int start;
     private int endInclusive;

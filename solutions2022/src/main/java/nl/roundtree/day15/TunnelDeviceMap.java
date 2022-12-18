@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import static java.util.Objects.nonNull;
 
-public class TunnelDeviceMap {
+class TunnelDeviceMap {
 
     private final List<Device> devices = new ArrayList<>();
 
